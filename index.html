@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dice-2</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        placeholder="Player 1"
+        class="input"
+        id="input-player1"
+      />
+      <input
+        type="text"
+        placeholder="Player 2"
+        class="input"
+        id="input-player2"
+      />
+
+      <button class="btn2">Accept</button><br />
+
+      <h1>Refresh Me</h1>
+
+      <div class="results-container">
+        <ul class="record-list">
+          <li class="rolls list-elements">Number of Rounds:</li>
+          <span id="no-of-rounds" class="results">0</span>
+          <li id="player1-wins" class="list-elements">Player 1 Wins:</li>
+          <span id="wins1" class="results">0</span>
+          <li class="list-elements">Draws:</li>
+          <span id="draws" class="results">0</span>
+          <li id="player2-wins" class="list-elements">Player 2 Wins:</li>
+          <span id="wins2" class="results">0</span>
+        </ul>
+      </div>
+
+      <button class="btn">Reset Score!</button>
+      <button id="new-round" class="btn">New Round!</button>
+
+      <div class="dice">
+        <p id="Player1">Player 1</p>
+        <div id="img1-container" class="img-container">
+          <img class="img1" src="./images/dice1.png" />
+        </div>
+      </div>
+
+      <div class="dice">
+        <p id="Player2">Player 2</p>
+        <div id="img2-container" class="img-container">
+          <img class="img2" src="./images/dice1.png" />
+        </div>
+      </div>
+    </div>
+
+    <footer>©️ All Rights Reserved</footer>
+
+    <script src="./scrypt.js"></script>
+  </body>
+</html>
